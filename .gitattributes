@@ -1,17 +1,16 @@
-# Auimport PySimpleGUI as sg
+import PySimpleGUI as sg
 
 layout = [
 [sg.Text('Usuário')],
 [sg.Input(key='usuario')],
 [sg.Text('senha')],
 [sg.Input(key='senha')],
-[sg.Button('login')],
 [sg.Text('',key='mensagem')],
+
 ]
 
-window = sg.Window('Login',Layout=layout)
+window = sg.Window ('Login',layout)
 while True:
-    event, values = window.read()
+    event, values = window.Read()
     if event == sg.WIN_CLOSED:
-         breakto detect text files and perform LF normalization
-* text=auto
+        break
